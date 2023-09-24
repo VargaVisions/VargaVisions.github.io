@@ -27,21 +27,18 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
-// Data
-import projectsTableData from "layouts/tables/data/projectsTableData";
+// Components
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
-
-// Images
-import Project2D from "../../assets/images/project2d.png";
 import Box from "@mui/material/Box";
 import { NavLink } from "react-router-dom";
 
-function Games() {
-  const { columns: prCols, rows: prRows } = projectsTableData;
+// Images
+import Project2D from "../../assets/images/project2d.png";
 
+function Games() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
