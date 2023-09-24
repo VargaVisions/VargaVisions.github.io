@@ -16,10 +16,10 @@
 
 */
 
-import { useState, useEffect, useMemo } from "react";
+import { useEffect, useState } from "react";
 
 // react-router components
-import { Route, Switch, Redirect, useLocation } from "react-router-dom";
+import { Redirect, Route, Switch, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
@@ -40,7 +40,7 @@ import theme from "assets/theme";
 import routes from "routes";
 
 // Vision UI Dashboard React contexts
-import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
+import { setMiniSidenav, setOpenConfigurator, useVisionUIController } from "context";
 
 export default function App() {
   const [controller, dispatch] = useVisionUIController();

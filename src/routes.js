@@ -36,36 +36,15 @@
   9. The `href` key is used to store the external links location.
   10. The `title` key is only for the item with the type of `title` and its used for the title text on the Sidenav.
   10. The `component` key is used to store the component of its route.
-*/
+ */
 
 // Vision UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
-import Billing from "layouts/billing";
 
 // Vision UI Dashboard React icons
-import { IoGameController, IoRocketSharp } from "react-icons/io5";
-import { IoIosDocument } from "react-icons/io";
-import {
-  BsController,
-  BsFillPersonFill,
-  BsGearWideConnected,
-  BsInfoCircle, BsPeopleFill,
-  BsPersonBadge,
-  BsPersonDash,
-  BsPersonHeart, BsPersonUp,
-  BsPhone,
-  BsPhoneFill,
-  BsPhoneFlip,
-  BsPhoneLandscapeFill,
-  BsPhoneVibrate,
-  BsPhoneVibrateFill, BsTabletFill, BsTagFill,
-} from "react-icons/bs";
-import { BsCreditCardFill } from "react-icons/bs";
-import { IoStatsChart } from "react-icons/io5";
-import { IoHome } from "react-icons/io5";
+import { IoGameController, IoHome } from "react-icons/io5";
+import { BsPeopleFill } from "react-icons/bs";
 import Games from "./layouts/games";
-import SignIn from "./layouts/authentication/sign-up";
 import Contact from "./layouts/contact";
 import Project2D from "./layouts/games/pages";
 

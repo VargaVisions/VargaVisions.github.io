@@ -21,24 +21,21 @@ import Card from "@mui/material/Card";
 
 // Vision UI Dashboard React components
 import VuiBox from "components/VuiBox";
-import VuiTypography from "components/VuiTypography";
 
 // Vision UI Dashboard React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import Table from "examples/Tables/Table";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
 import projectsTableData from "layouts/tables/data/projectsTableData";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
-import { CardActionArea, CardMedia } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 
 // Images
-import Project2D from '../../assets/images/project2d.png';
+import Project2D from "../../assets/images/project2d.png";
 import Box from "@mui/material/Box";
 import { NavLink } from "react-router-dom";
 
@@ -54,23 +51,23 @@ function Games() {
             <Card>
               <CardActionArea>
                 <NavLink to="/games/Project2D">
-                <Box
-                  component="img"
-                  src={Project2D}
-                  height={window.innerWidth < 1200 ? "12em" : "18em"}
-                  borderRadius="10px"
-                  margin="0 auto"
-                  display="block"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" color="#ffffff">
-                    Project2D
-                  </Typography>
-                  <Typography variant="body2" color="#dbdbdb">
-                    Egy kétdimenziós játék a VargaVisions-től, amely a középkorban játszódik.
-                    Főhősünk egy lovag/katona, akinek számos akadály kerül az útjába.
-                  </Typography>
-                </CardContent>
+                  <Box
+                    component="img"
+                    src={Project2D}
+                    height={window.innerWidth < 1200 ? "12em" : "18em"}
+                    borderRadius="10px"
+                    margin="0 auto"
+                    display="block"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" color="#ffffff">
+                      Project2D
+                    </Typography>
+                    <Typography variant="body2" color="#dbdbdb">
+                      Egy kétdimenziós játék a VargaVisions-től, amely a középkorban játszódik.
+                      Főhősünk egy lovag/katona, akinek számos akadály kerül az útjába.
+                    </Typography>
+                  </CardContent>
                 </NavLink>
               </CardActionArea>
             </Card>

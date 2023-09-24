@@ -1,26 +1,15 @@
 import borders from "../../assets/theme/base/borders";
 import VuiBox from "../../components/VuiBox";
 import VuiTypography from "../../components/VuiTypography";
-import Stack from "@mui/material/Stack";
 import GradientBorder from "../../examples/GradientBorder";
-import IconButton from "@mui/material/IconButton";
-import rgba from "../../assets/theme/functions/rgba";
-import Icon from "@mui/material/Icon";
-import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 import radialGradient from "../../assets/theme/functions/radialGradient";
 import palette from "../../assets/theme/base/colors";
 import VuiInput from "../../components/VuiInput";
-import VuiSwitch from "../../components/VuiSwitch";
 import VuiButton from "../../components/VuiButton";
-import { Link } from "react-router-dom";
 import DashboardLayout from "../../examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "../../examples/Navbars/DashboardNavbar";
-import { TextareaAutosize, TextField } from "@mui/material";
-import { useState } from "react";
-import Typography from "@mui/material/Typography";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Container from "@mui/material/Container";
 
 function Contact() {
   // Email sender
@@ -30,7 +19,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, form.current, process.env.EMAILJS_PUBLIC_KEY)
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -158,22 +147,22 @@ function Contact() {
                   palette.gradients.borderLight.angle,
                 )}
               >
-                  <VuiInput
-                    name="message"
-                    as="textarea"
-                    rows={5}
-                    placeholder="Írd ide, amit szeretnél mondani"
-                    style={{
-                      WebkitBoxSizing: "border-box",
-                      MozBoxSizing: "border-box",
-                      boxSizing: "border-box",
-                      width: "100%"
-                    }}
-                    sx={({ typography: { size } }) => ({
-                      fontSize: size.sm,
-                      resize: "none",
-                    })}
-                  />
+                <VuiInput
+                  name="message"
+                  as="textarea"
+                  rows={5}
+                  placeholder="Írd ide, amit szeretnél mondani"
+                  style={{
+                    WebkitBoxSizing: "border-box",
+                    MozBoxSizing: "border-box",
+                    boxSizing: "border-box",
+                    width: "100%",
+                  }}
+                  sx={({ typography: { size } }) => ({
+                    fontSize: size.sm,
+                    resize: "none",
+                  })}
+                />
               </GradientBorder>
             </VuiBox>
             <VuiBox mt={4} mb={1}>
