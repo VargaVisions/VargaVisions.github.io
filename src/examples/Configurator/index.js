@@ -212,7 +212,7 @@ function Configurator() {
             <VuiBox mr={1.5}>
               <VuiButton
                 component={Link}
-                href="https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/vision-ui-dashboard-react&text=Check%20Vision%20UI%20Dashboard%20made%20by%20@simmmple_web%20and%20@CreativeTim%20#webdesign%20#dashboard%20#react"
+                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fvargavisions.github.io%2F&text=Come%20check%20out%20the%20VargaVisions%20website%20and%20try%20the%20games.%0AHere%20is%20the%20link%3A&hashtags=indie%20%23gamedevelopment%20%23vargavisions"
                 target="_blank"
                 rel="noreferrer"
                 color="dark"
@@ -223,7 +223,7 @@ function Configurator() {
             </VuiBox>
             <VuiButton
               component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/vision-ui-dashboard-react"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://vargavisions.github.io/"
               target="_blank"
               rel="noreferrer"
               color="dark"

@@ -38,24 +38,21 @@
   10. The `component` key is used to store the component of its route.
  */
 
-// Vision UI Dashboard React layouts
-import Dashboard from "layouts/dashboard";
-
-// Vision UI Dashboard React icons
 import { IoGameController, IoHome } from "react-icons/io5";
 import { BsPeopleFill } from "react-icons/bs";
 import Games from "./layouts/games";
 import Contact from "./layouts/contact";
 import Project2D from "./layouts/games/pages";
+import Home from "./layouts/home/home";
 
 const routes = [
   {
     type: "collapse",
     name: "Főoldal",
-    key: "dashboard",
+    key: "home",
     route: "/",
     icon: <IoHome size="15px" color="inherit" />,
-    component: Dashboard,
+    component: Home,
     noCollapse: true,
   },
   {
